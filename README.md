@@ -1,6 +1,6 @@
 Yii2 meta-crumbs pack
 =====================
-alternative way for work with breadcrumbs and meta data
+alternative way for work with breadcrumbs and metadata with open-graph-protocol helpers
 
 also include NoLayoutBehavior for registration actions where layout must be skipped
 
