@@ -4,6 +4,14 @@ alternative way for work with breadcrumbs and metadata with open-graph-protocol 
 
 also include NoLayoutBehavior for registration actions where layout must be skipped
 
+
+![Status](https://travis-ci.org/Insolita/yii2-metacrumbs.svg?branch=master)
+![Latest Stable Version](https://img.shields.io/packagist/v/insolita/yii2-metacrumbs.svg)
+[![Total Downloads](https://img.shields.io/packagist/dt/insolita/yii2-metacrumbs.svg)](https://packagist.org/packages/insolita/yii2-metacrumbs)
+![License](https://img.shields.io/packagist/l/insolita/yii2-metacrumbs.svg)
+
+
+
 Installation
 ------------
 

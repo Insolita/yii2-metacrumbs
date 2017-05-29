@@ -10,6 +10,11 @@ use insolita\metacrumbs\components\IBreadcrumbCollection;
 use yii\base\Widget;
 use yii\helpers\Html;
 
+/**
+ * Class CrumbWidget
+ *
+ * @package insolita\metacrumbs\widgets
+ */
 class CrumbWidget extends Widget
 {
     /**
@@ -40,14 +45,26 @@ class CrumbWidget extends Widget
      */
     public $activeItemTemplate = "<li class=\"active\">{link}</li>\n";
     
+    /**
+     * @var \insolita\metacrumbs\components\IBreadcrumbCollection
+     */
     private $breadCrumbManager;
     
+    /**
+     * CrumbWidget constructor.
+     *
+     * @param \insolita\metacrumbs\components\IBreadcrumbCollection $breadcrumbManager
+     * @param array                                                 $config
+     */
     public function __construct(IBreadcrumbCollection $breadcrumbManager, array $config = [])
     {
         $this->breadCrumbManager = $breadcrumbManager;
         parent::__construct($config);
     }
     
+    /**
+     *
+     */
     public function run()
     {
         if ($this->breadCrumbManager->count() === 0) {
@@ -61,6 +78,12 @@ class CrumbWidget extends Widget
         echo Html::tag($this->tag, implode('', $links), $this->options);
     }
     
+    /**
+     * @param \insolita\metacrumbs\components\CrumbItem $item
+     * @param                                           $template
+     *
+     * @return string
+     */
     protected function renderItem(CrumbItem $item, $template)
     {
         if ($item->url) {

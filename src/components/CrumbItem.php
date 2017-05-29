@@ -42,7 +42,7 @@ class CrumbItem extends Object
      * @param null   $order
      * @param array  $config
      */
-    public function __construct(string $title, $url, $order = null, $config = [])
+    public function __construct($title, $url, $order = null, $config = [])
     {
         $this->title = $title;
         $this->url = $url ?: Url::current();
