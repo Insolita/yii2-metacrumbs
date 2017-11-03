@@ -5,14 +5,14 @@
 
 namespace insolita\metacrumbs\components;
 
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\helpers\Url;
 
 /**
  * Class CrumbItem
  *
  */
-class CrumbItem extends Object
+class CrumbItem extends BaseObject
 {
     /**
      * @var array
