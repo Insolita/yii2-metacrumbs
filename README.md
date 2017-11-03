@@ -20,7 +20,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require --prefer-dist insolita/yii2-metacrumbs "~1.0"
+composer require --prefer-dist insolita/yii2-metacrumbs "~2.0"
 ```
 
 or add
